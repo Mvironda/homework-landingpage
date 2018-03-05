@@ -1,5 +1,5 @@
 /*
-Project Name: Relaxr Landing Page
+Project Name: Relaxr
 Client: Relaxr
 Author: Madeleine Vironda
 Developer @GA in London
@@ -32,7 +32,7 @@ Developer @GA in London
 
 body {
 	color: #000;
-	font-family: Open Sans:300,400,600,800;
+	font-family: 'Open Sans':300,400,600,800;
 	line-height: 1.5;
 }
 
@@ -44,7 +44,6 @@ body {
 .container {
 	margin: 0 auto;
 	max-width: 90%;
-	width: 1024px;
 }
 
 /******************************************
@@ -96,6 +95,7 @@ body {
 	color: #033048;
 	font-weight: 800;
 	margin-top: 20px;
+	padding: 10px 30px;
 }
 
 .two {
@@ -103,6 +103,7 @@ body {
 	border: none;
 	color: white;
 	font-weight: 800;
+	padding: 10px 30px;
 }
 
 .logo {
@@ -111,22 +112,104 @@ body {
 	font-weight: 800;
 }
 
-header {
-	color: white;
-	font-weight: 800;
-	padding: 20px 0 0 100px;
-	position:absolute;
+.blog {
+	background: #f0efef;
 }
 
-button {
+.column {
+	float: left;
+}
+
+.article {
+	color: #606161;
+	padding: 10px 10px;
+	width: 70%;
+}
+
+.sidebar {
+	color: #033048;
+	font-weight: 300;
+	padding: 2px 10px;
+	width: 30%;
+}
+
+.ad {
+	width: 70%;
+}
+ 
+.no_bullets {
+	list-style-type: none;
+	margin-left: -35px;
+}
+
+.article p::first-letter {
+	float:left;
+	font-size: 300%;
+	padding-right: 5px;
+	text-decoration: bold;
+	text-transform: uppercase;
+}
+
+.article h2 {
+	color: #033048;
+
+}
+
+header {
+	background: #033048;
+	color: white;
+	font-weight: 800;
+}
+
+nav {
+	float: right;
+	padding: 20px 0 0 0;
+}
+
+nav li {
+	color: #f9e42e;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	list-style: none;
+	margin: 0 10px;
+}
+
+nav a {
+	color: #f9e42e;
+}
+
+a {
 	border-radius: 5px;
-	padding: 10px 50px;
+	margin-bottom: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+a:hover { 
+    background-color: #606161;
+    color: white;
 }
 
 i {
 	color: white;
 	font-size: 40px;
 	padding: 10px 15px 30px 15px;
+}
+
+img {
+	width: 100%;
+}
+
+hr {
+	border-color: #f0efef;
+	border-size: 1px;
+	margin: 40px 0 0 0;
+	width: 100%;
+}
+
+h1 {
+	float: left;
 }
 
 h2 {
@@ -138,13 +221,17 @@ h3 {
 	font-weight: 600;
 }
 
-h5 {
-	font-size: 12px;
+h6 {
+	color: #033048;
+	float: right;
+	font-size: 16px;
+	font-weight: 600;
 }
 
 footer {
 	background: #121212;
 	color: white;
+	clear: both;
 	padding: 10px 0 10px 0;
 	text-align: center;
 }
